@@ -17,7 +17,15 @@
   <p><em>Beautiful and intuitive user interface with game library, easy navigation, and modern design</em></p>
 </div>
 
-**📞 Contact Us on Telegram:** [Sunnra0x0](https://t.me/sunnra0x0)
+<div align="center">
+
+### 📞 **Contact Us on Telegram**
+
+[![Telegram](https://img.shields.io/badge/Telegram-Contact%20Us-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/sunnra0x0)
+
+**[👉 Click Here to Contact: @Sunnra0x0 👈](https://t.me/sunnra0x0)**
+
+</div>
 
 </div>
 
