@@ -1,0 +1,90 @@
+.modal-window-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 100000;
+}
+
+.modal-window-reg__scale-cont {
+    position: relative;
+    width: 915px;
+    height: 736px;
+}
+
+.modal-window-reg__fields {
+    position: absolute;
+    resize: none;
+    border: #FAD123;
+    font-family: 'Bronzier', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    width: 629px;
+    height: 25px;
+    left: 138px;
+    font-size: 26px;
+    outline: none;
+    color: #E6C8FF;
+    background: rgba(0,0,0,0);
+    box-shadow: none;
+    z-index: 10;
+}
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    .modal-window-reg__fields {
+        height: 45px;
+    }
+}
+
+
+.modal-window-reg__name {
+    top: 164px;
+
+}
+
+.modal-window-reg__phone {
+    top: 252px;
+
+}
+
+.modal-window-reg__email {
+    top: 342px;
+
+}
+
+.modal-window-reg__comment {
+    top: 424px;
+    height: 86px;
+
+}
+
+.modal-window-reg__close {
+    position: absolute;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    left: 795px;
+    top: 48px;
+    z-index: 10;
+}
+
+.modal-window-reg__get {
+    position: absolute;
+    cursor: pointer;
+    width: 709px;
+    height: 90px;
+    top: 588px;
+    left: 99px;
+    z-index: 10;
+}
+
+.modal-window-reg__back {
+    left: 0;
+    position: absolute;
+    width: 915px;
+    height: 736px;
+}

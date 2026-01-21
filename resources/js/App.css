@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Bronzier";
+    src: local("Bronzier"),
+    url("./assets/fonts/Bronzier-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Bronzier";
+    src: local("Bronzier"),
+    url("./assets/fonts/Bronzier-Medium.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.watermark-game {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999999;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.watermark-game__text {
+    color: white;
+    font-family: 'Bronzier', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 50vh;
+    opacity: 0.7;
+}
+
+.game-keyboard-on {
+    visibility: visible;
+}
+
+.game-keyboard-off {
+    visibility: hidden;
+}
+
+.game-keyboard {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: -40px;
+    width: 999px;
+    pointer-events: auto;
+}
+
+.modal-window-fill-backevent {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    z-index: -1;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 20;
+    background: white;
+}
+#logo img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transform: translate(0, -105%);
+}
+#logo #logo-two {
+    display: none;
+}
+#logo p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    font-size: 12px;
+    color: #78A3C4;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+}
+#logo-inner {
+    position: relative;
+    width: 190px;
+    opacity: 1;
+}
+#logo-text1 {
+    animation: logoTextAppear 1s ease 1, logoText 3.6s linear infinite;
+}
+#logo-text2 {
+    animation: logoTextAppear 1s ease 1, logoText 3.6s linear reverse infinite;
+}
+
+@keyframes logoTextAppear {
+    0% {
+        opacity: 0;
+        top: 30px;
+    }
+    100% {
+        opacity: 0;
+        top: -13px;
+    }
+}
+
+
+@keyframes logoText {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

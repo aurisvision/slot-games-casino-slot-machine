@@ -1,0 +1,156 @@
+.modal-window-signphone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 100000;
+}
+
+.modal-window-signphone__scale-cont {
+    position: relative;
+    transform-origin: 50% 50%;
+    width: 921px;
+    height: 717px;
+}
+
+.modal-window-signphone__valid, .modal-window-signphone__invalid {
+    position: absolute;
+    left: 137px;
+    top: 126px;
+}
+.modal-window-signphone__validate-cont {
+    position: absolute;
+    z-index: 100;
+    transition: 1s;
+    top: 191px;
+    left: -19px;
+}
+
+.modal-window-signphone__phone {
+    top: 246px;
+}
+.modal-window-signphone__code {
+    top: 445px;
+}
+.modal-window-signphone__error-text {
+    position: absolute;
+    font-family: 'Bronzier', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 19px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 46px;
+}
+
+.modal-window-signphone__info-text {
+    position: absolute;
+    font-family: 'Bronzier', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 19px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 320px;
+    z-index: 10;
+}
+
+.modal-window-signphone__fields {
+    position: absolute;
+    resize: none;
+    border: #ffffff;
+    font-family: 'Bronzier', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    width: 629px;
+    height: 60px;
+    left: 141px;
+    font-size: 28px;
+    outline: none;
+    color: #5FF50D;
+    background: rgba(0,0,0,0);
+    box-shadow: none;
+    z-index: 10;
+}
+
+.modal-window-signphone__error {
+    position: absolute;
+    top: 531px;
+    left: 129px;
+    transition: 1s;
+    opacity: 0;
+    width: 716px;
+    height: 97px;
+    z-index: 1;
+}
+
+.modal-window-signphone__verify-cont {
+    position: absolute;
+    z-index: 100;
+}
+
+.modal-window-signphone__submit-modal {
+    position: absolute;
+    top: 401px;
+    left: 83px;
+}
+.modal-window-signphone__back-modal {
+
+}
+.modal-window-signphone__close-modal {
+    position: absolute;
+    left: 802px;
+    top: 196px;
+    width: 35px;
+    height: 35px;
+}
+
+.modal-window-signphone__code-modal {
+    position: absolute;
+    top: 315px;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 800;
+    letter-spacing: 40px;
+}
+
+.modal-window-signphone__close {
+    position: absolute;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    left: 810px;
+    top: 58px;
+    z-index: 10;
+}
+
+.modal-window-signphone__ok {
+    position: absolute;
+    cursor: pointer;
+    width: 712px;
+    height: 89px;
+    top: 538px;
+    left: 101px;
+    z-index: 10;
+}
+
+.modal-window-signphone__verify {
+    position: absolute;
+    cursor: pointer;
+    width: 712px;
+    height: 89px;
+    top: 333px;
+    left: 101px;
+    z-index: 10;
+}
+
+.modal-window-signphone__back {
+    position: absolute;
+    width: 921px;
+    height: 717px;
+}

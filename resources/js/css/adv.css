@@ -1,0 +1,67 @@
+.modal-window-adv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    position: relative;
+}
+
+.modal-window-adv__scale-cont {
+    position: absolute;
+    width: 1412px;
+    height: 752px;
+}
+
+.modal-window-adv__logo {
+    position: absolute;
+    width: 1093px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: scale(0.8);
+    left: -243px;
+    top: 275px;
+    pointer-events: none;
+}
+
+.modal-window-adv__down {
+    position: absolute;
+}
+
+.modal-window-adv__logo2 {
+    margin-top: -134px;
+}
+
+
+.modal-window-adv__btn {
+    position: absolute;
+    cursor: pointer;
+    width: 372px;
+    height: 163px;
+    z-index: 10;
+    left: 778px;
+    top: 524px;
+}
+
+.modal-window-adv__close {
+    position: absolute;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    left: 1315px;
+    top: 43px;
+    z-index: 10;
+}
+
+.modal-window-adv__back {
+    position: absolute;
+    width: 1412px;
+    height: 752px;
+    pointer-events: none;
+}

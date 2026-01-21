@@ -1,0 +1,344 @@
+@font-face {
+    font-family: "Bronzier";
+    src: local("Bronzier"),
+    url("./assets/fonts/Bronzier-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Bronzier";
+    src: local("Bronzier"),
+    url("./assets/fonts/Bronzier-Medium.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+
+
+.game-button:hover {
+    filter: contrast(1.5);
+    cursor: pointer;
+}
+
+
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+#need-fullscreen-popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.fullscreen-popup-img {
+    align-self: center;
+    max-width: 225px;
+    width: 100%;
+    max-height: 184px;
+    user-select: none;
+}
+.fullscreen-popup-text {
+    user-select: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#orientation-win {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: url(images/en_orientation.gif);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    z-index: 1000;
+    background-size: contain;
+    visibility: hidden;
+}
+
+.preloader-game {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(74,59,83,0.3);
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    z-index: 1000;
+}
+.prel-logo {
+    width: auto;
+    height: 30vh;
+    max-width: 100vw;
+    user-select: none;
+}
+.prel-logo-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.prel-bar {
+    position: relative;
+    align-self: center;
+    max-width: 100vw;
+    user-select: none;
+}
+
+.prel-bar-back {
+    height: 9vh;
+    width: auto;
+    max-width: 100vw;
+    user-select: none;
+}
+
+.prel-bar-back-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.prel-bar-text {
+    width: auto;
+    max-width: 100vw;
+    height: 5vh;
+}
+.prel-bar-text-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.prel-bar-line {
+    position: absolute;
+    width: auto;
+    height: 100%;
+}
+.prel-bar-line-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.preloader-game-text {
+    font-size: 2em;
+    background: linear-gradient(180deg, #ffffff 20%, #CBFF7E 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    border-image: linear-gradient(180deg, #ffffff 20%, #CBFF7E 60%);
+    border-image-slice: 1;
+    border:none;
+}
+
+.hide-settings {
+    display: none!important;
+}
+
+.show-settings {
+    display: block!important;
+}
+
+#settings-popup {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#black-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#settings-responsive {
+    position: absolute;
+    width: 1461px;
+    height: 997px;
+    z-index: 10;
+}
+#change-pass {
+    display: none;
+    position: absolute;
+    left: 176px;
+    z-index: 20;
+}
+
+#change-pass-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    z-index: 10;
+    left: 250px;
+    top: 440px;
+    height: 319px;
+}
+#change-pass-text input {
+    border: none;
+    outline:none;
+    color: white;
+    font-size: 40px;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+}
+
+#change-pass-change {
+    position: relative;
+    z-index: 10;
+    width: 645px;
+    top: 467px;
+    left: 235px;
+    cursor: pointer;
+}
+
+#change-pass-change:hover {
+    filter: brightness(1.75);
+}
+
+.grey-color {
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+#change-pass-back {
+    position: absolute;
+    top: 0;
+}
+
+#info-user {
+    /*width: 90%;
+    height: 90%;*/
+
+}
+
+#info-user-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    z-index: 10;
+    left: 445px;
+    top: 260px;
+    width: 560px;
+    height: 670px;
+}
+
+#info-user-text-name {
+    border: none;
+    outline:none;
+    color: #FAD123;
+    font-size: 40px;
+    font-family: 'Patua One', sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+}
+
+#info-user-text-pass {
+    border: none;
+    outline:none;
+    color: white;
+    font-size: 40px;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+}
+
+#info-user-text-tel {
+    border: none;
+    outline:none;
+    color: white;
+    font-size: 40px;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+}
+
+.no-arrow {
+    -moz-appearance: textfield;
+}
+.no-arrow::-webkit-inner-spin-button {
+    display: none;
+}
+.no-arrow::-webkit-outer-spin-button,
+.no-arrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#info-user-right {
+    position: relative;
+    display: flex;
+    width: 254px;
+    height: 720px;
+    top: 209px;
+    left: 1020px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+#info-user-check img {
+    left: 150px;
+    position: relative;
+}
+
+#info-user-change {
+    cursor: pointer;
+}
+
+#info-user-change:hover {
+    filter: brightness(1.75);
+}
+
+#info-user-add {
+    cursor: pointer;
+}
+
+#info-user-add:hover {
+    filter: brightness(1.75);
+}
+
+#info-user-back {
+    position: absolute;
+    top: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

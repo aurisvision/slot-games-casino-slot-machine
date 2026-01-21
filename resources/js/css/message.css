@@ -1,0 +1,76 @@
+.modal-window-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 1000000;
+}
+
+.modal-window-message__scale-cont {
+    position: relative;
+    transform-origin: 50% 25%;
+    width: 1353px;
+    height: 542px;
+}
+
+.modal-window-message__text-unit {
+    position: absolute;
+    width: 75%;
+    font-size: 48px;
+    align-items: center;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    letter-spacing: 5px;
+    white-space: pre-wrap;
+    font-family: 'Bronzier', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-weight: 600;
+    left: 184px;
+    top: 180px;
+}
+
+.modal-window-message__text {
+    background: linear-gradient(
+            to bottom, #D1FEB5, #60F340);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    z-index: 100;
+}
+
+.modal-window-message__text-shadow {
+    text-shadow: 3px 3px 2px #000; /*, -3px -3px 4px #000, -3px 4px 4px #000, 3px -3px 4px #000;*/
+    color: #180F28;
+    z-index: 99;
+}
+
+.modal-window-message__ok {
+    position: absolute;
+    cursor: pointer;
+    width: 359px;
+    height: 193px;
+    left: 511px;
+    top: 307px;
+    z-index: 10;
+}
+
+.modal-window-message__close {
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    left: 1245px;
+    top: 66px;
+    z-index: 10;
+}
+
+.modal-window-message__back {
+    position: absolute;
+    width: 1353px;
+    height: 542px;
+    left: 0;
+}
